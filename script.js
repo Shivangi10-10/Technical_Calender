@@ -19,3 +19,12 @@ function filterListItems() {
     }
   });
 }
+
+document.querySelector('.btn-download').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'the_timeliner.xlsx';
+    link.download = 'the_timeliner.xlsx';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
