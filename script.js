@@ -22,8 +22,8 @@ function filterListItems() {
 const downloadButton = document.getElementById('downloadButton');
 document.getElementById('downloadButton').addEventListener('click', function() {
     const link = document.createElement('a');
-    link.href = 'new_timeliner.xlsx'; 
-    link.download = 'new_timeliner.xlsx';
+    link.href = 'the_timeliner.xlsx'; 
+    link.download = 'the_timeliner.xlsx';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
